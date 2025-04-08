@@ -1,0 +1,19 @@
+# Java build
+target/
+*.log
+
+# IntelliJ
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# VS Code
+.vscode/
+
+# Frontend build/output
+node_modules/
+dist/
+build/
+static/dist/
+static/node_modules/

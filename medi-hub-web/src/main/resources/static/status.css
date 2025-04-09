@@ -1,0 +1,78 @@
+body {
+    background-image: url("images/login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Sticky Navigation Bar */
+.sticky-nav {
+    background-color: #0f6dd8;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Nav Content Container */
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+/* Logo Styling */
+.nav-logo {
+    height: 40px;
+    border-radius: 50%; /* Circular look */
+    margin-right: 20px;
+}
+
+/* Nav Links */
+.sticky-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.sticky-nav li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.sticky-nav li a:hover {
+    color: #cce7ff;
+}
+
+/* Main Container */
+.container {
+    margin-top: 100px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(117, 151, 232, 0.5); /* Bluish transparency */
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styling */
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 26px;
+    background: linear-gradient(135deg, rgba(42, 136, 229, 0.5), rgba(0, 198, 255, 0.9));
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

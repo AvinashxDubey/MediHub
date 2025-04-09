@@ -9,7 +9,7 @@
     background-position: center center;
 }*/
 body {
-    background: url('images/login.jpg');
+    background: url('../images/login.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

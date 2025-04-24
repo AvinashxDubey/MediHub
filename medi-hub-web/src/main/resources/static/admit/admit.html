@@ -7,16 +7,12 @@
     <title>Admit a Patient</title>
     <link rel="stylesheet" href="admit.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Chatbot CSS -->
+    <link rel="stylesheet" href="../chatbot/chatbot.css">
 </head>
 
 <body>
-    <!--<nav class="sticky-nav">
-        <ul>
-            <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-            <li><a href="admit.html"><i class="fas fa-user-plus"></i> Admit Patient</a></li>
-            <li><a href="login.html"><i class="fas fa-procedures"></i> Patient Status</a></li>
-        </ul>
-    </nav>-->
     <nav class="sticky-nav">
         <div class="nav-content">
             <img src="../images/logo.png" alt="Logo" class="nav-logo">
@@ -27,12 +23,10 @@
             </ul>
         </div>
     </nav>
-    <!--<div class="site-logo">
-        <img src="images/logo.png" alt="Logo">
-    </div>-->
+
     <div class="container">
         <div class="admit">
-        <h1>Admit a Patient</h1>
+            <h1>Admit a Patient</h1>
         </div>
         <form id="admissionForm">
             <label for="patientName"><i class="fas fa-user"></i> Patient Name:</label>
@@ -62,7 +56,22 @@
             <button type="submit"><i class="fas fa-check-circle"></i> Admit Patient</button>
         </form>
     </div>
+
+    <!-- Chatbot HTML -->
+    <div id="chat-icon">&#128172;</div>
+
+    <div id="chat-window" class="hidden">
+        <div id="chat-header">Prescription Bot</div>
+        <div id="chat-messages"></div>
+        <input type="text" id="chat-input" placeholder="Type prescription..." />
+        <button id="send-btn">Send</button>
+    </div>
+
+    <!-- Page Script -->
     <script src="admit.js"></script>
+
+    <!-- Chatbot Script -->
+    <script src="../chatbot/chatbot.js"></script>
 </body>
 
 </html>

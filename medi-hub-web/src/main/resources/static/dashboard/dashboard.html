@@ -7,16 +7,12 @@
     <title>Hospital Dashboard</title>
     <link rel="stylesheet" href="dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Chatbot CSS -->
+    <link rel="stylesheet" href="../chatbot/chatbot.css">
 </head>
 
 <body>
-    <!--<nav class="sticky-nav">
-        <ul>
-            <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-            <li><a href="admit.html"><i class="fas fa-user-plus"></i> Admit Patient</a></li>
-            <li><a href="login.html"><i class="fas fa-procedures"></i> Patient Status</a></li>
-        </ul>
-    </nav>-->
     <nav class="sticky-nav">
         <div class="nav-content">
             <img src="../images/logo.png" alt="Logo" class="nav-logo">
@@ -27,25 +23,22 @@
             </ul>
         </div>
     </nav>
-    
 
     <div class="container">
         <div class="head">
-        <h1>Hospital Dashboard</h1>
+            <h1>Hospital Dashboard</h1>
         </div>
         <div class="dashboard-grid">
             <div class="dashboard-box" id="beds">
                 <i class="fas fa-bed"></i>
                 <h2>Available Beds</h2>
-                <div id="bedsContent">
-                </div>
+                <div id="bedsContent"></div>
             </div>
 
             <div class="dashboard-box" id="patients">
                 <i class="fas fa-users"></i>
                 <h2>Number of Patients</h2>
-                <div id="patientsContent">
-                </div>
+                <div id="patientsContent"></div>
             </div>
 
             <div class="dashboard-box" id="opdQueue">
@@ -55,7 +48,22 @@
             </div>
         </div>
     </div>
+
+    <!-- Chatbot HTML -->
+    <div id="chat-icon">&#128172;</div>
+
+    <div id="chat-window" class="hidden">
+        <div id="chat-header">Prescription Bot</div>
+        <div id="chat-messages"></div>
+        <input type="text" id="chat-input" placeholder="Type prescription..." />
+        <button id="send-btn">Send</button>
+    </div>
+
+    <!-- Page Script -->
     <script src="dashboard.js"></script>
+
+    <!-- Chatbot Script -->
+    <script src="../chatbot/chatbot.js"></script>
 </body>
 
 </html>
